@@ -85,8 +85,13 @@
     color: #282828;
 }
 
+
+@media (min-width: 769px) {}
+
+
 /* Mobil için görünüm */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
     .navbar {
         display: none;
         flex-direction: column;
