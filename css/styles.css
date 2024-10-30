@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #282828;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 70svw;
+}
