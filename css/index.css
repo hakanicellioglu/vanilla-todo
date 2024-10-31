@@ -52,6 +52,9 @@
     min-height: 100svh;
     padding: 10px 0;
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Home */
@@ -109,6 +112,72 @@
     font-size: 200%;
 }
 
+/* Contact */
+.contact {
+    flex-direction: column;
+}
+
+form {
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 50svw;
+    padding: 10px;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: vertical;
+    background-color: transparent;
+}
+
+textarea {
+    min-height: 10svh;
+    max-height: 20svh;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 3px solid white;
+    outline: white;
+}
+
+button {
+    width: 50svw;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+button:hover {
+    transition: all .3s ease-in-out;
+    background-color: white;
+    color: #282828;
+}
 
 /* Footer */
 .row {
@@ -127,6 +196,7 @@
 .footer-divider .navbar-link {
     padding: 10px 20px;
 }
+
 
 
 /* Mobil için görünüm */
@@ -173,7 +243,6 @@
 
     .about {
         height: max-content;
-
     }
 
     .about p {

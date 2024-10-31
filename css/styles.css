@@ -21,3 +21,8 @@ a {
 .container {
     width: 70svw;
 }
+
+input,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
