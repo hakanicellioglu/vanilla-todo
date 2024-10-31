@@ -96,7 +96,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: max-content;
 }
 
 .about p {
@@ -170,6 +169,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .about {
+        height: max-content;
+
     }
 
     .about p {
