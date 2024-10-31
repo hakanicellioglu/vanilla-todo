@@ -25,7 +25,9 @@
     color: white;
 }
 
-.navbar-link:hover {
+.navbar-link:hover,
+.footer-divider .legal-links:hover,
+.footer-divider .social-links:hover {
     opacity: .4;
     transition: .3s ease-out;
 }
@@ -86,11 +88,33 @@
 }
 
 
-@media (min-width: 769px) {}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10svh;
+}
+
+.social-links,
+.legal-links {
+    padding: 10px;
+    color: white;
+}
+
+.footer-divider .navbar-link {
+    padding: 10px 20px;
+}
 
 
 /* Mobil için görünüm */
 @media (max-width: 1024px) {
+    .home-left {
+        font-size: 12px;
+    }
+
+    .home-right {
+        display: none;
+    }
 
     .navbar {
         display: none;
@@ -122,5 +146,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .footer {
+        display: none;
     }
 }
