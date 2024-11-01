@@ -1,0 +1,32 @@
+input {
+    width: 20svw;
+    padding: 10px;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: vertical;
+    background-color: transparent;
+}
+
+input:focus {
+    border: 3px solid white;
+    outline: white;
+}
+
+button {
+    width: 20svw;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+button:hover {
+    transition: all .3s ease-in-out;
+    background-color: white;
+    color: #282828;
+}
