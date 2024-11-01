@@ -4,8 +4,13 @@ const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 const taskRoutes = require('./routes/tasks');
 
+
+
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+app.use(express.json()); // JSON formatındaki verileri almak için gerekli
+app.use(express.urlencoded({ extended: true })); // URL-encoded verileri almak için gerekli
 
 // Veritabanı Bağlantısı
 connectDB();
